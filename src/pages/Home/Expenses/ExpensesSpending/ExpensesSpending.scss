@@ -1,0 +1,69 @@
+.expenses-spending {
+  display: grid;
+  gap: 2rem;
+  padding: 1.75rem 1.25rem;
+  color: $clr-neutral-dark-brown;
+  background-color: $clr-neutral-very-pale-orange;
+  border-radius: 1.25rem;
+
+  @include breakpoint(medium) {
+    padding: 1.75rem 2rem;
+  }
+  
+  &__header {
+    font-size: 1.5rem;
+    color: $clr-neutral-dark-brown;
+
+    @include breakpoint(medium) {
+      font-size: 2rem;
+    }
+  }
+  
+  &__divider {
+    border: 1px solid $clr-neutral-cream;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: 0.9375rem;
+    color: $clr-neutral-medium-brown;
+    
+    @include breakpoint(medium) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $clr-neutral-dark-brown;
+
+    @include breakpoint(medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &__last-month-change {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: $clr-neutral-dark-brown;
+
+    @include breakpoint(medium) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__last-month-label {
+    font-size: 0.9375rem;
+    color: $clr-neutral-medium-brown;
+
+    @include breakpoint(medium) {
+      font-size: 1.125rem;
+    }
+  }
+}

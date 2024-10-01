@@ -1,0 +1,43 @@
+.expense-balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75rem 1.25rem;
+  color: $clr-neutral-white;
+  background-color: $clr-primary-color-soft-red;
+  border-radius: 1.25rem;
+  
+  @include breakpoint(medium) {
+    padding: 1.75rem 2rem;
+  }
+  
+  &__logo {
+    width: 3.75rem;
+
+    @include breakpoint(medium) {
+      width: 4.5rem;
+    }
+  }
+  
+  &__text {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  &__header {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    
+    @include breakpoint(medium) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    @include breakpoint(medium) {
+      font-size: 2rem;
+    }
+  }
+}

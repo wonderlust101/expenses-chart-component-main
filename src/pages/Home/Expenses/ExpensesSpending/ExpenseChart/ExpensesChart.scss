@@ -1,0 +1,55 @@
+.expense-chart {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+  height: 12rem;
+  
+  @include breakpoint(medium) {
+    gap: 1rem;
+  }
+
+  &__day {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    justify-items: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  &__bar {
+    width: 100%;
+    border-radius: 0.3125rem;
+  }
+
+  &__label {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: $clr-neutral-medium-brown;
+    
+    @include breakpoint(medium) {
+      font-size: 0.9375rem;
+    }
+  }
+
+  &__hover-amount {
+    position: absolute;
+    padding: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: $clr-neutral-white;
+    background-color: $clr-neutral-dark-brown;
+    border-radius: 0.3rem;
+    opacity: 0;
+    transition: 0.2s;
+    
+    @include breakpoint(medium) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__bar:hover + &__hover-amount {
+    opacity: 1;
+  }
+}

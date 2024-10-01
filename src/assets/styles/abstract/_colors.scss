@@ -3,24 +3,20 @@
 // Main Colors
 
 // Primary Colors
-$clr-primary-color-election-night: #110320;
-$clr-primary-color-fading-horizon: #442266;
-$clr-primary-color-iris-royale: #591b98;
-
-// Secondary Colors
-$clr-secondary-color-neon-spring: #3ffd6a;
-
-// Tertiary Colors
-$clr-tertiary-color-star-dust: #f9f3dd;
-$clr-tertiary-color-crackled: #f2e7d1;
+$clr-primary-color-soft-red: hsl(10, 79%, 65%);
+$clr-primary-color-cyan: hsl(186, 34%, 60%);
 
 // Shadows
 
 // Gradients
 
 // Neutrals
-$clr-white: #ffffff;
-$clr-black: #000000;
+$clr-neutral-dark-brown: hsl(25, 47%, 15%);
+$clr-neutral-medium-brown: hsl(28, 10%, 53%);
+$clr-neutral-cream: hsl(27, 66%, 92%);
+$clr-neutral-very-pale-orange: hsl(33, 100%, 98%);
+$clr-neutral-white: #ffffff;
+$clr-neutral-black: #000000;
 
 // Specific Colors
-$clr-background: #ffffff;
+$clr-background: hsl(27, 66%, 92%);
